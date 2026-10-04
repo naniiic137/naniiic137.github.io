@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moved</title>
+<meta name="robots" content="noindex">
+<script>
+  // Old GitHub Pages addresses -> where each project lives now. Keeps the rest of the path, query and #hash.
+  var MOVED = {
+    'hamza.ben.ismail': 'https://www.hamzabenismail.cloud-ip.cc/',
+    'jobfit-ai': 'https://jobfit-ai-hbi.pages.dev/',
+    'readme-glow': 'https://readme-glow.pages.dev/',
+    'picopulse': 'https://picopulse.pages.dev/',
+    'cipher-chat': 'https://cipher-chat.pages.dev/',
+    'chesscipher': 'https://chesscipher.pages.dev/',
+    'custom-checkers': 'https://custom-checkers.pages.dev/'
+  };
+  var parts = location.pathname.split('/').filter(Boolean);
+  var home = MOVED[(parts[0] || '').toLowerCase()];
+  var target = home ? home + parts.slice(1).join('/') : 'https://www.hamzabenismail.cloud-ip.cc/';
+  location.replace(target + location.search + location.hash);
+</script>
+</head>
+<body>
+<p>This page moved. <a href="https://www.hamzabenismail.cloud-ip.cc/">Go to the portfolio</a>.</p>
+</body>
+</html>
